@@ -1,0 +1,71 @@
+.contenedorOpcion{
+    padding-top: 1%;
+}
+
+.fs-5{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Cambiar el color de fondo del encabezado */
+.header-bg {
+    background: linear-gradient(to bottom, #3b82f6, #38bdf8); 
+  }
+
+  /* Cambiar el color de fondo de la barra de navegación */
+.navbar {
+    background: linear-gradient(to bottom, #3b82f6, #38bdf8);
+    position: fixed; /* Asegura que la barra esté fija */
+    top: 0;
+    width: 100%; /* Para ocupar toda la anchura */
+    z-index: 1030; /* Asegura que esté sobre el contenido */
+  }
+
+  .navbar-nav {
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%; 
+}
+body {
+    padding-top: 80px; /* Espacio para la barra de navegación fija */
+}
+.contenido h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #2c3e50; /* Color principal del encabezado */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contenido{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff; /* Fondo blanco para el contenido principal */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.contenido p {
+
+        font-size: 1em;
+        margin-bottom: 15px;
+        text-align: justify;
+    
+}
+
+.acuerdos{
+    text-align: center;
+    padding-left: 10%;
+}
+
+.botones{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+}
+
+.botones h5{
+    padding-bottom: 3%;
+    text-align: center;
+}

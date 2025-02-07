@@ -1,0 +1,156 @@
+.contenedorOpcion{
+    padding-top: 1%;
+}
+
+.fs-5{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.radio{
+    padding-left: 40%;
+    
+}
+
+.formulario{
+    padding-right: 17%;
+    padding-left: 17%;
+    padding-bottom: 5%;
+}
+
+.contlocker{
+    padding-left: 40%;
+}
+
+
+#NumLocker{
+    width: 100px;
+}
+
+.botones{
+    margin-top: 3%;
+    text-align: center;
+}
+/* Cambiar el color de fondo del encabezado */
+.header-bg {
+  background-color: #f0f0f0; 
+}
+
+/* Cambiar el color de fondo de la barra de navegación */
+.navbar {
+  background: linear-gradient(to bottom, #3b82f6, #38bdf8); 
+}
+
+/* Cambiar el tipo de letra de la barra de navegación */
+.navbar {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+/* Para distribuir los elementos de la barra de navegación proporcionalmente */
+.navbar-nav {
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%; 
+}
+/* Aumentar el tamaño de los títulos y enlaces en la barra de navegación */
+.navbar-nav .nav-link {
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+/* Espacio entre los elementos de la barra de navegación */
+.nav-item {
+    margin: 0 15px; 
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
+}
+
+.header-bg,
+    .iconos {
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    /* Animación para ocultar */
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    /* Animación para mostrar */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        visibility: hidden;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Estado inicial */
+    .header-bg {
+      animation-name: fadeIn;
+    }
+
+    .iconos {
+      animation-name: fadeIn;
+    }
+
+    /* Ocultar con animación para pantallas pequeñas */
+    @media only screen and (max-width: 1000px) {
+      .header-bg {
+        animation-name: fadeOut;
+        display: none;
+      }
+    }
+
+    /* Ocultar con animación para pantallas grandes */
+    @media only screen and (min-width: 1001px) {
+      .iconos {
+        animation-name: fadeOut;
+      }
+    }
+
+    .footer-p{
+        background-color: #C1E8FF;     
+    }
+
+
+    .navigation a{
+      position: relative;
+      font-size: 1.1em;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 40px;
+    }
+    
+    .navigation a::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      border-radius: 5px;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .5s;
+    
+    }
+    
+    .navigation a:hover::after{
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+    
+    .nav-item a:hover {
+      text-decoration: none !important;
+    }

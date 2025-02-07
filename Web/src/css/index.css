@@ -1,0 +1,335 @@
+.lockers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1%; /* Centrado vertical completo */
+  gap: 10px; /* Espacio entre filas de lockers */
+}
+
+/* Cada lista de lockers (fila) */
+.locker-list-1, .locker-list-2, .locker-list-3, .locker-list-4 {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones se ajusten a varias filas si es necesario */
+  justify-content: center;
+  gap: 5px; /* Espacio entre botones */
+  width: 95%; /* Ajusta el ancho de cada fila */
+}
+
+/* Botones de lockers */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.fs-5{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Cambiar el color de fondo del encabezado */
+.header-bg {
+    background-color: #f0f0f0; 
+}
+
+/* Cambiar el color de fondo de la barra de navegación */
+.navbar {
+  background: linear-gradient(to bottom, #3b82f6, #38bdf8); 
+}
+
+/* Cambiar el tipo de letra de la barra de navegación */
+.navbar {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+/* Para distribuir los elementos de la barra de navegación proporcionalmente */
+.navbar-nav {
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%; 
+}
+/* Aumentar el tamaño de los títulos y enlaces en la barra de navegación */
+.navbar-nav .nav-link {
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+/* Espacio entre los elementos de la barra de navegación */
+.nav-item {
+    margin: 0 15px; 
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
+}
+
+.header-bg,
+    .iconos {
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    /* Animación para ocultar */
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    /* Animación para mostrar */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        visibility: hidden;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Estado inicial */
+    .header-bg {
+      animation-name: fadeIn;
+    }
+
+    .iconos {
+      animation-name: fadeIn;
+    }
+
+    /* Ocultar con animación para pantallas pequeñas */
+    @media only screen and (max-width: 1000px) {
+      .header-bg {
+        animation-name: fadeOut;
+        display: none;
+      }
+    }
+
+    /* Ocultar con animación para pantallas grandes */
+    @media only screen and (min-width: 1001px) {
+      .iconos {
+        animation-name: fadeOut;
+      }
+    }
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+} 
+
+.footer-p{
+    background-color: #C1E8FF;     
+}
+
+.box-area{
+    width: 930px;
+}
+
+.left-box{
+    background-color: #000000;
+}
+
+.left-box-admin{
+  background-color: #efe7e7;
+}
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+@media only screen and (max-width: 780px){
+    .left-box img, .left-box-admin img{
+        width: 150px;
+    }
+}
+/* Centrar títulos */
+h3 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.col{
+ margin-top: 1%;
+ margin-left: 1%; 
+ margin-left: 1%;
+}
+
+/* Condiciones para alinear correctamente las redes sociales */
+@media only screen and (min-width: 1400px){
+  .container .row .col:first-child {
+    /* Estilos generales */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar contenido */
+}
+.container .row .col:nth-child(2) {
+  /* Estilos generales */
+  padding-top: 20px;
+  background-color: #f0f0f0; /* Fondo azul claro */
+  padding-left: 7%; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center; /* Centrar contenido */
+}
+}
+
+@media only screen and (max-width: 1399px){
+  .container .row .col:first-child {
+    /* Estilos generales */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar contenido */
+}
+.container .row .col:nth-child(2) {
+  /* Estilos generales */
+  padding-top: 20px;
+  background-color: #f0f0f0; /* Fondo azul claro */
+  padding-left: 2.5%; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center; /* Centrar contenido */
+}
+}
+
+@media only screen and (max-width: 1200px){
+  .container .row .col:first-child {
+    /* Estilos generales */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar contenido */
+}
+.container .row .col:nth-child(2) {
+  /* Estilos generales */
+  background-color: #f0f0f0; /* Fondo azul claro */
+  padding-left: 24%; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center; /* Centrar contenido */
+}
+}
+
+@media only screen and (max-width: 995px){
+  .container .row .col:first-child {
+    /* Estilos generales */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar contenido */
+}
+.container .row .col:nth-child(2) {
+  /* Estilos generales */
+  background-color: #f0f0f0; /* Fondo azul claro */
+  padding-left: 15%; /*Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center; /* Centrar contenido */
+}
+}
+
+@media only screen and (max-width: 769px){
+  .container .row .col:first-child {
+    /* Estilos generales */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar contenido */
+}
+.container .row .col:nth-child(2) {
+  /* Estilos generales */
+  background-color: #f0f0f0; /* Fondo azul claro */
+  padding-left: 3%; /*Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center; /* Centrar contenido */
+}
+}
+
+@media only screen and (max-width: 580px){
+  /* Aqui se pone el estilo de los iconos */
+  
+}
+
+.spinner-grow{
+  background-color: #78c3ee;
+}
+
+.navigation a{
+  position: relative;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+
+}
+
+.navigation a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav-item a:hover {
+  text-decoration: none !important;
+}
+
+
+.DISPONIBLE {
+  background-color: #90EE90; /* Verde claro */
+}
+
+.ASIGNADO {
+  background-color: #FF6B6B; /* Rojo claro */
+}
+
+.ESPERA_RENOVACION {
+  background-color: #FFD700; /* Amarillo */
+}
+
+.leyenda {
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.leyenda-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
