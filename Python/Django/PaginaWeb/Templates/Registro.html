@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Formulario de regsitro</h1>
+    <form method="post">{% csrf_token %}
+        <!-- <label for {{form.first_name.id_for_label}}>Nombre(s):</label>
+        {{form.first_name}}
+        <br><br>
+        <label for {{form.last_name.id_for_label}}>Apellidos: </label>
+        {{form.last_name}}
+        <br><br>
+        <label for>Correo:</label>
+        {{form.email}}
+        <br><br>
+        <label for {{form.password.id_for_label}}>Contrañea: </label>
+        {{form.password}}
+        <br><br>
+        <label for >Confirme la Contrañea: </label>
+        {{form.confirmPaswword}}
+        <br><br> -->
+        {{form.as_p}}
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+</html>

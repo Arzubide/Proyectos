@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <label for={{form.first_name.id_for_label}}>Nombre(s): </label>
+        {{form.first_name}}
+
+        <label for="{{form.last_name.id_for_label}}">Apellidos: </label>
+        {{form.last_name}}
+
+        <label for="{{form.password.id_for_label}}">Contraseña</label>
+        {{form.password}}
+        <button type="submit">Actualizar registro</button>
+    </form>
+</body>
+</html>
