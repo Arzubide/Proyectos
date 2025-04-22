@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
 
-    # path(),
+    path('Borrar-Usuario/<pk>/', views.BorrarUsuarios.as_view()),
 ]

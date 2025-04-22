@@ -4,7 +4,7 @@ from applications.ResgistroSesion.models import RegistroBD
 
 # Create your views here.
 
-# class BorrarUsuarios(DeleteView):
-#     model = RegistroBD
-#     # template_name = 
-#     # success_url =
+class BorrarUsuarios(DeleteView):
+    model = RegistroBD
+    template_name = 'AdminControl/BorrarUsuario.html'
+    success_url = '/'

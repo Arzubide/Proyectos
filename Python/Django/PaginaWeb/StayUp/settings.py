@@ -57,7 +57,7 @@ ROOT_URLCONF = 'StayUp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR], ##
+        'DIRS': [BASE_DIR / 'Templates'] , ##
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
