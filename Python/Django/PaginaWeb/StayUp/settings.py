@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #Apps creadas
     'applications.ResgistroSesion',
+    'applications.AdminControl',
 ]
 
 MIDDLEWARE = [
