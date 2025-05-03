@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+    Registro
+{% endblock title %}
+    
+{% block body %}
+    {% include 'Base/navbar.html' %}
+
+    <div class="container">
+        <div class="row" style="padding-top: 5%;">
+            <h2 style="padding-bottom: 2%; text-align: center;">Registro de usuarios</h2>
+            <!--registro-->
+
+            <form method="post">{% csrf_token %}
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com" style="padding-left: 2%;">
+                    <label for="floatingInput" style="padding-left: 3%;">Correo</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Password" style="padding-left: 2%;">
+                    <label for="floatingPassword" style="padding-left: 3%;">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Password" style="padding-left: 2%;">
+                    <label for="floatingPassword" style="padding-left: 3%;">Apellidos</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Password" style="padding-left: 2%;">
+                    <label for="floatingPassword" style="padding-left: 3%;">Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="confirmarContraseña" name="confirmarContraseña" placeholder="Password" style="padding-left: 2%;">
+                    <label for="floatingPassword" style="padding-left: 3%;">Confirmar Contraeña</label>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="btn btn-outline-success">Registrar</button>
+                </div>
+            </form>
+            <!--Fin de registro-->
+        </div>
+
+    </div>
+
+
+{% endblock body %}

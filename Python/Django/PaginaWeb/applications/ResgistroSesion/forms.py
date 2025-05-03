@@ -55,5 +55,5 @@ class modeladoRegistroBD(forms.ModelForm):
 
         if RegistroBD.objects.filter(email = email).exists():
             raise forms.ValidationError('El correo ingresado ya existe') #Retorna el error
-
-        pass
+        else:
+            return email

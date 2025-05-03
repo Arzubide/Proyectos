@@ -7,26 +7,30 @@ from .forms import modeladoRegistroBD
 # Create your views here.
 
 class RegistroExito(TemplateView):
-    template_name = 'templates/RegistroExitoso.html'
+    template_name = 'RegistroSesion/RegistroExitoso.html'
 
 
 class RegsitroSesion(CreateView):
-    template_name = 'templates/Registro.html'
+    template_name = 'RegistroSesion/Registro.html'
     model = RegistroBD
     form_class = modeladoRegistroBD #Sustituyemos fields
     success_url = reverse_lazy('urls_registro:RegistroExito')
+    
+    def form_valid(self, form):
+        return super().form_valid(form)
+    
 
 
 class ListadoDeRegistros(ListView):
     model = RegistroBD
-    template_name = 'templates/ListadoRegistros.html'
+    template_name = 'ListadoRegistros.html'
     context_object_name = 'Lista'
     paginate_by = 5
 
 
 class ActualizarDatos(UpdateView):
     model = RegistroBD
-    template_name = 'templates/ActualizarDatos.html'
+    template_name = 'ActualizarDatos.html'
     fields = ('__all__')
 
     
